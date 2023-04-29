@@ -1,0 +1,101 @@
+.specials {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.specials > .heading {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.specials > .heading > h2 {
+  font-size: 32px;
+}
+
+.specials > .heading > button {
+  height: min-content;
+  padding: 1rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background: #f4ce14;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.specials > .body {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.specials > .body > .card {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border-radius: 5px;
+  background: #f3f3f37d;
+  cursor: pointer;
+  transition-duration: 700ms;
+}
+
+.specials > .body > .card:hover {
+  scale: 1.05;
+  transition-duration: 700ms;
+}
+
+.specials > .body > .card > img {
+  border-radius: 5px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.specials > .body > .card > .description {
+  padding: 1.5rem;
+}
+
+.card > .description > .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card > .description > .card-header > .item-name {
+  font-weight: 800;
+}
+
+.card > .description > .card-header > .price {
+  color: #ee9972;
+}
+
+.card > .description > .card-footer {
+  font-weight: 800;
+}
+
+@media (max-width: 1300px) {
+  .specials > .body > .card {
+    width: 25%;
+  }
+}
+
+@media (max-width: 950px) {
+  .specials > .body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .specials > .body > .card {
+    width: 60%;
+  }
+
+  .specials > .body > .card > img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 550px) {
+  .specials > .heading {
+    flex-direction: column;
+  }
+}
